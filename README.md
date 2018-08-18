@@ -1,6 +1,6 @@
 # ChuckNorris Project.
 
-PROBLEM STATEMENT
+## PROBLEM STATEMENT
 
 Create a web service which combines two existing web services.
 
@@ -22,24 +22,24 @@ $ curl ‘http://localhost:5000’
 Δαμέας Γιάνναρης’s OSI network model has only one layer - Physical..
 
 
-INSTRUCTIONS FOR RUNNING WEB SERVICE
+## INSTRUCTIONS FOR RUNNING WEB SERVICE
 
-# Prep
+#### Prep
 mkdir -p $GOPATH/src/github.com/mathnitin
 cd $GOPATH/src/github.com/mathnitin
 
-# Checkout git
+#### Checkout git
 git clone https://github.com/mathnitin/ChuckNorris.git
 cd ChuckNorris
 
-===== Instructions to run binary =====
-# Run web-service.
+#### Instructions to run binary
+###### Run web-service.
 NITINMAT-M-K12N:ChuckNorris nitinmat$ go run main.go
 
 
-===== Instructions to build and run Docker container =====
-# Build Docker image
+#### Instructions to build and run Docker container 
+###### Build Docker image
 NITINMAT-M-K12N:ChuckNorris nitinmat$ docker build -t chucknorris .
-# Run Docker image
+###### Run Docker image
 NITINMAT-M-K12N:ChuckNorris nitinmat$ docker run -p 5000:5000 chucknorris:latest
 ( The above command will start a webserver on localhost:5000 port )
