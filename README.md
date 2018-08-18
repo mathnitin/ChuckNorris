@@ -25,21 +25,21 @@ $ curl ‘http://localhost:5000’
 ## INSTRUCTIONS FOR RUNNING WEB SERVICE
 
 #### Prep
-mkdir -p $GOPATH/src/github.com/mathnitin
-cd $GOPATH/src/github.com/mathnitin
+$$ mkdir -p $GOPATH/src/github.com/mathnitin
+$$ cd $GOPATH/src/github.com/mathnitin
 
 #### Checkout git
-git clone https://github.com/mathnitin/ChuckNorris.git
-cd ChuckNorris
+$$ git clone https://github.com/mathnitin/ChuckNorris.git
+$$ cd ChuckNorris
 
 #### Instructions to run binary
 ###### Run web-service.
-NITINMAT-M-K12N:ChuckNorris nitinmat$ go run main.go
+$$ go run main.go
 
 
 #### Instructions to build and run Docker container 
 ###### Build Docker image
-NITINMAT-M-K12N:ChuckNorris nitinmat$ docker build -t chucknorris .
+$$ docker build -t chucknorris .
 ###### Run Docker image
-NITINMAT-M-K12N:ChuckNorris nitinmat$ docker run -p 5000:5000 chucknorris:latest
+$$ docker run -p 5000:5000 chucknorris:latest
 ( The above command will start a webserver on localhost:5000 port )
